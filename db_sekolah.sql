@@ -52,7 +52,8 @@ CREATE TABLE `aspirasi` (
   `feedback` varchar(50) NOT NULL,
   `lokasi` varchar(50) NOT NULL,
   `ket` varchar(50) NOT NULL,
-  `nis` int(5) NOT NULL
+  `nis` int(5) NOT NULL,
+  `created_at` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
