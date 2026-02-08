@@ -88,7 +88,10 @@ $color = match($d['status']){
                         </span>
                         <h6 class="fw-semibold mb-0">Aspirasi Siswa</h6>
                     </div>
-                    <span class="badge bg-<?= $color ?>">
+                    <span class="f-10px ms-auto p-3">
+                        <?= date('d/m/Y', strtotime($d['created_at'])); ?>
+                    </span>
+                    <span class="badge bg-<?= $color ?> col-1 ">
                         <?= ucfirst($d['status']) ?>
                     </span>
                 </div>
